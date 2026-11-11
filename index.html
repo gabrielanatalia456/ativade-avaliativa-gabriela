@@ -1,0 +1,184 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Capanema Mais Segura</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>🚸 Capanema Mais Segura</h1>
+
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#problema">O Problema</a>
+            <a href="#sinalizacao">Sinalização</a>
+            <a href="#sugestao">Indique um local</a>
+        </nav>
+    </header>
+
+    <main>
+
+
+        <section id="inicio" class="inicio">
+
+            <div class="inicio-texto">
+
+                <h2>Mais respeito para as faixas de pedestres</h2>
+                <p>
+                    Este projeto busca incentivar melhorias na
+                    sinalização de trânsito de Capanema - PR,
+                    contribuindo para uma cidade mais segura
+                    para todos.
+                </p>
+
+                <a href="#sugestao" class="botao">
+                    Indique um local
+                </a>
+
+            </div>
+
+        </section>
+
+    
+        <section id="problema" class="problema">
+
+            <h2>Por que precisamos melhorar?</h2>
+
+            <p>
+              para garantir uma segurança maior para pedestres, já ocorreu muitos casos de atropelamentos e acidentes em Capanema - PR, 
+              devido a falta de sinalização adequada.
+
+        </section>
+
+        <section id="sinalizacao" class="sinalizacao">
+
+            <h2>O que pode ser melhorado?</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                
+            <p>
+                para melhorar poderiam colocar placas de sinalização. por que já teve
+                muitos casos de atropelamentos e acidentes em Capanema - PR, devido a falta de sinalização adequada.
+                e colocando a vida de pedestres em risco, especialmente crianças, idosos e pessoas com mobilidade reduzida.
+            <p>
+
+            </div>
+
+        </section>
+
+
+            <form id="formulario">
+
+                <label for="nome">nome</label>
+
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Informe seu nome"
+                    required
+                >
+
+                <label for="bairro">Bairro ou região:</label>
+
+                <input
+                    type="text"
+                    id="bairro"
+                    placeholder="Ex: Centro"
+                    required
+                >
+
+                <label for="local">Local onde está o problema:</label>
+
+                <input
+                    type="text"
+                    id="local"
+                    placeholder="Informe a rua ou ponto de referência"
+                    required
+                >
+
+                <label for="tipo">Qual melhoria seria necessária?</label>
+
+                <select id="tipo" required>
+
+                    <option value="">Selecione uma opção</option>
+
+                    <option>Nova faixa de pedestres</option>
+
+                    <option>Reforma de faixa apagada</option>
+
+                    <option>Instalação de placa</option>
+
+                    <option>Sinalização próxima à escola</option>
+
+                    <option>Outra melhoria</option>
+
+                </select>
+
+                <label for="descricao">Conte mais sobre o local:</label>
+
+                <textarea
+                    id="descricao"
+                    rows="5"
+                    placeholder="Descreva a situação..."
+                    required
+                ></textarea>
+
+                <button type="submit">
+                    Enviar sugestão
+                </button>
+
+            </form>
+
+            <p id="resposta"></p>
+
+        </section>
+
+        <section class="conscientizacao">
+
+            <h2>Para termos um trânsito mais seguro, todos precisam colaborar</h2>
+
+            <p>
+                Motoristas devem respeitar as faixas de pedestres,
+                reduzir a velocidade e ter atenção redobrada
+                em locais com grande circulação de pessoas.
+            </p>
+
+            <p>
+                Pedestres também devem utilizar os locais
+                apropriados para atravessar e observar
+                o trânsito antes de iniciar a travessia.
+            </p>
+
+        </section>
+
+    </main>
+
+    <script>
+
+        const formulario = document.getElementById("formulario");
+
+        formulario.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            document
+
+            formulario.reset();
+
+        });
+
+    </script>
+
+</body>
+
+</html>
