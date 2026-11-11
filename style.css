@@ -1,0 +1,285 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f5;
+    color: #333;
+}
+
+
+
+header {
+    background-color: #2233cc;
+    color: white;
+    padding: 20px 8%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.logo h1 {
+    font-size: 28px;
+}
+
+.logo p {
+    margin-top: 5px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #b9e6c8;
+}
+
+
+
+.inicio {
+    padding: 70px 8%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.texto-inicio {
+    flex: 1;
+}
+
+.texto-inicio h2 {
+    color: #3298eb;
+    font-size: 38px;
+    margin-bottom: 20px;
+}
+
+.texto-inicio p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.imagem {
+    flex: 1;
+}
+
+.imagem img {
+    width: 100%;
+    border-radius: 15px;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #1e016d;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.botao:hover {
+    background-color: #031c8b;
+}
+
+
+.sobre {
+    padding: 60px 8%;
+    background-color: white;
+    text-align: center;
+}
+
+.sobre h2 {
+    color: #070579;
+    margin-bottom: 35px;
+    font-size: 30px;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: #eaf4ed;
+    padding: 30px;
+    border-radius: 12px;
+    flex: 1;
+    min-width: 200px;
+}
+
+.card h3 {
+    color: #051363;
+    margin-bottom: 15px;
+}
+
+.card p {
+    line-height: 1.5;
+}
+
+
+.formulario {
+    padding: 60px 8%;
+    max-width: 850px;
+    margin: auto;
+}
+
+.formulario h2 {
+    color: #02327aad;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.formulario > p {
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 1.5;
+}
+
+form {
+    background-color: white;
+    padding: 35px;
+    border-radius: 12px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+input, select, textarea {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 15px;
+    font-family: Arial, sans-serif;
+}
+
+textarea {
+    resize: vertical;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: 2px solid #494cff;
+}
+
+button {
+    background-color: #042281;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background-color: #1e0535;
+}
+
+.aviso {
+    color: #777;
+    font-size: 13px;
+    margin-top: 20px;
+}
+
+footer {
+    background-color: #05037e;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    line-height: 1.8;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    .inicio {
+        flex-direction: column;
+        text-align: center;
+        padding: 45px 6%;
+    }
+
+    .texto-inicio h2 {
+        font-size: 30px;
+    }
+
+    .imagem {
+        width: 100%;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    .formulario {
+        padding: 40px 5%;
+    }
+
+    form {
+        padding: 22px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .logo h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .texto-inicio h2 {
+        font-size: 25px;
+    }
+
+    .sobre h2,
+    .formulario h2 {
+        font-size: 25px;
+    }
+}
